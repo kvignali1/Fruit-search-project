@@ -83,6 +83,8 @@ const fruit = [
 const textInput = document.querySelector("#fruit");
 const suggestions = document.querySelector(".suggestions ul");
 
+// ==== code sitation start ====
+// Code used from youtube https://www.youtube.com/watch?v=pdyFf1ugVfk user GreatStack
 textInput.onkeyup = function () {
 	let result = [];
 	let input = textInput.value;
@@ -97,19 +99,18 @@ textInput.onkeyup = function () {
 		textInput.innerHTML = "";
 	}
 };
-
 function showSuggestions(result) {
 	const content = result.map((list) => {
 		return "<li>" + list + "</li>";
 	});
 	suggestions.innerHTML = "<ul>" + content.join("") + "</ul>";
 }
-
 function useSuggestion(evt) {
 	console.dir(evt.target);
 	textInput.value = evt.target.innerText;
 	suggestions.innerHTML = "";
 }
+//==== code sitation end ====
 
 textInput.addEventListener("keyup", searchHandler);
 suggestions.addEventListener("click", useSuggestion);
