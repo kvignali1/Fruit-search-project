@@ -111,17 +111,5 @@ function useSuggestion(evt) {
 	suggestions.innerHTML = "";
 }
 
-function search(str) {
-	let results = [];
-
-	// TODO
-
-	return results;
-}
-
-function searchHandler(e) {
-	// TODO
-}
-
 textInput.addEventListener("keyup", searchHandler);
 suggestions.addEventListener("click", useSuggestion);
