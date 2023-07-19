@@ -100,14 +100,14 @@ textInput.onkeyup = function () {
 
 function showSuggestions(result) {
 	const content = result.map((list) => {
-		return "<li onclick=useSuggestion(this)>" + list + "</li>";
+		return "<li>" + list + "</li>";
 	});
 	suggestions.innerHTML = "<ul>" + content.join("") + "</ul>";
 }
 
-function useSuggestion(list) {
-	console.log(list.innerHTML);
-	textInput.value = list.innerHTML;
+function useSuggestion(evt) {
+	console.dir(evt.target);
+	textInput.value = evt.target.innerText;
 	suggestions.innerHTML = "";
 }
 

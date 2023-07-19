@@ -1,46 +1,42 @@
-* {
-	/* box-sizing: border-box; */
+#fruit {
+	width: 250px;
+	border: solid 2px;
+	border-radius: 5px;
+	background-color: rgb(218, 218, 218);
+	opacity: 0.65;
 }
-
-:focus {
-	/* TODO */
+#fruit:focus:hover {
+	background-color: rgb(255, 255, 255);
 }
 
 body {
-	/* TODO */
-}
-
-input {
-	/* TODO */
+	background: linear-gradient(
+		to right,
+		rgb(255, 230, 0),
+		rgb(255, 166, 0),
+		rgb(255, 94, 0)
+	);
+	background-repeat: no-repeat;
 }
 
 .search-container {
-	/* TODO */
-}
-.search-container input,
-.search-container .suggestions {
-	/* TODO */
-}
-.search-container input {
-	/* TODO */
-}
-.search-container .suggestions {
-	/* TODO */
+	width: 250px;
+	margin: 23%;
+	padding-left: 20%;
+	text-align: center;
 }
 
 ul {
-	/* TODO */
-}
-ul.has-suggestions {
-	/* TODO */
-}
-ul li {
-	/* TODO */
-}
-ul li:hover {
-	/* TODO */
+	margin: 0 auto;
+	padding-left: 0%;
+	width: 250px;
 }
 
-input {
-	/* TODO */
+ul li {
+	border-radius: 3px;
+	list-style-type: none;
+}
+ul li:hover {
+	background-color: rgb(255, 123, 0);
+	opacity: 0.8;
 }
