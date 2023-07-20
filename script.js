@@ -111,6 +111,4 @@ function useSuggestion(evt) {
 	suggestions.innerHTML = "";
 }
 //==== code sitation end ====
-
-textInput.addEventListener("keyup", searchHandler);
 suggestions.addEventListener("click", useSuggestion);
