@@ -84,7 +84,7 @@ const textInput = document.querySelector("#fruit");
 const suggestions = document.querySelector(".suggestions ul");
 
 // ==== code sitation start ====
-// Code used from youtube https://www.youtube.com/watch?v=pdyFf1ugVfk user GreatStack
+// Code sourced and modified from youtube https://www.youtube.com/watch?v=pdyFf1ugVfk user GreatStack
 textInput.onkeyup = function () {
 	let result = [];
 	let input = textInput.value;
